@@ -1,0 +1,1570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- ===== MASTER SEO UPDATE ===== -->
+    <title>Fun Blobs – Play Free Physics Balance Game Online (No Download Browser Game)</title>
+    <meta name="description" content="Play Fun Blobs, a free physics balance game online. Drag colorful blobs onto a seesaw and keep perfect balance. No download, instant play HTML5 browser game. Addictive puzzle fun for kids and adults.">
+    <meta name="keywords" content="balance game, physics balance game, online balance game, seesaw game, blob balancing game, shape balance game, physics puzzle game, fun online game, free browser game, casual balance game, physics puzzle game online, strategy balance game, logic puzzle game, brain training game, skill based game, reaction time game, timing and balance game, balance and strategy game, simple physics game, reflex challenge game, kids balance game, cute monster game, educational physics game, fun games for kids online, shape matching game, family friendly puzzle game, cartoon balance game, colorful browser game, learning through play game, safe online game for children, free online puzzle game, no download browser game, HTML5 physics game, instant play online game, addictive casual game, one more try game, mobile friendly browser game, lightweight online game, quick break game, office break online game, free online games, best puzzle games, fun addictive games, simple arcade game, trending online game, relaxing casual game, minimalist game design, interactive physics game, time killing game, popular web games">
+    <meta name="author" content="Fun Blobs">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <link rel="canonical" href="https://www.funblobs.com/">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Fun Blobs – Free Physics Balance Game Online">
+    <meta property="og:description" content="Play Fun Blobs instantly: drag colorful blobs, balance the seesaw. Free browser game, no download.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.funblobs.com">
+    <meta property="og:image" content="https://www.funblobs.com/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Fun Blobs – Free Physics Balance Game">
+    <meta name="twitter:description" content="Play Fun Blobs online: drag blobs, balance seesaw. Free, no download.">
+    
+    <!-- FAVICONS – corrected paths for public folder -->
+    <link rel="icon" type="image/png" sizes="16x16" href="public/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="public/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="public/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="public/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" href="public/apple-touch-icon.png">
+    <link rel="manifest" href="public/site.webmanifest">
+    <link rel="shortcut icon" href="public/favicon.ico">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoGame",
+      "name": "Fun Blobs",
+      "description": "Play Fun Blobs, a free physics balance game online. Drag colorful blobs onto a seesaw and keep perfect balance. No download, instant play HTML5 browser game.",
+      "genre": ["Puzzle", "Physics", "Family"],
+      "gamePlatform": "Web Browser",
+      "applicationCategory": "Game",
+      "operatingSystem": "Any",
+      "url": "https://www.funblobs.com",
+      "image": "https://www.funblobs.com/og-image.jpg",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1250"
+      }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is this a free online puzzle game?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! Fun Blobs is completely free. No payments, no signups – just pure fun as a free browser game."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to download anything?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No download needed. It's an instant play online game that runs in your browser as an HTML5 physics game."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it suitable for kids?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely! It's a safe online game for children with cute visuals and simple mechanics – a great educational physics game."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I play on my phone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, it's a mobile friendly browser game with touch controls. Works perfectly on all devices."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this a good office break game?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Perfect for quick breaks. It's a lightweight online game that loads fast and doesn't distract coworkers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes this game addictive?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The timing and balance game mechanics create that 'one more try' feeling. It's a true addictive casual game."
+          }
+        }
+      ]
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Preloader - more stable */
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 20% 30%, #1a2f3f, #0b1a26);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.4s ease;
+            will-change: opacity;
+        }
+        .preloader.hide {
+            opacity: 0;
+        }
+        .preloader span {
+            font-size: 3rem;
+            animation: bounce 1s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        body {
+            background: radial-gradient(circle at 20% 30%, #1a2f3f, #0b1a26);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+            padding: 16px;
+        }
+
+        .site-wrapper {
+            max-width: 1000px;
+            width: 100%;
+            opacity: 0;
+            animation: fadeIn 0.3s ease forwards 0.3s;
+        }
+        
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+
+        /* Header */
+        .seo-header {
+            text-align: center;
+            margin: 20px 0 10px;
+            color: white;
+        }
+
+        .seo-header h1 {
+            font-size: 3.2rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #fff, #aad0ff, #ffaa88);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 30px rgba(255,160,100,0.5);
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .seo-header .subhead {
+            font-size: 1.3rem;
+            color: #d0e5ff;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
+        /* Game container */
+        .game-container {
+            max-width: 720px;
+            width: 100%;
+            margin: 0 auto 30px;
+            background: rgba(18, 30, 41, 0.9);
+            border-radius: 64px 64px 48px 48px;
+            box-shadow: 0 30px 50px -15px rgba(0, 0, 0, 0.7);
+            padding: 28px 24px 36px 24px;
+            border: 1px solid rgba(255, 200, 150, 0.15);
+        }
+
+        .game-header {
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        .game-header h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #ffeacc;
+            text-shadow: 0 0 15px #ff9f4b;
+        }
+
+        .stats-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 15, 30, 0.8);
+            padding: 12px 20px;
+            border-radius: 80px;
+            margin: 16px 0 20px 0;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 160, 100, 0.3);
+        }
+
+        .score-box {
+            background: linear-gradient(145deg, #3d2a1c, #5d3a22);
+            color: #ffefd0;
+            padding: 8px 28px;
+            border-radius: 60px;
+            font-weight: 800;
+            font-size: 2.2rem;
+            line-height: 1;
+            box-shadow: 0 6px 0 #2a1c12;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px #ffb56b;
+            border: 1px solid #ffaa55;
+        }
+
+        .tip {
+            color: #fff;
+            font-weight: 600;
+            background: rgba(70, 40, 20, 0.9);
+            padding: 8px 24px;
+            border-radius: 40px;
+            font-size: 1rem;
+            border: 1px solid rgba(255, 160, 80, 0.6);
+            text-transform: uppercase;
+        }
+
+        .canvas-wrapper {
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(145deg, #1a2f3f, #0a1a25);
+            border-radius: 48px;
+            padding: 20px;
+            box-shadow: 0 20px 30px -8px black, 0 0 0 2px rgba(255, 140, 60, 0.3) inset;
+            border: 1px solid rgba(255, 180, 120, 0.2);
+        }
+
+        canvas {
+            width: 100%;
+            height: auto;
+            background: radial-gradient(circle at 30% 30%, #2a4a6a, #0a1f2f);
+            border-radius: 36px;
+            display: block;
+            box-shadow: 0 0 0 2px rgba(255, 200, 150, 0.2), 0 18px 30px -10px black;
+            cursor: grab;
+            touch-action: none;
+            will-change: transform;
+            transform: translateZ(0);
+            backface-visibility: hidden;
+        }
+
+        canvas:active {
+            cursor: grabbing;
+        }
+
+        .action-bar {
+            display: flex;
+            gap: 16px;
+            margin: 24px 0 16px 0;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .primary-btn {
+            background: linear-gradient(145deg, #c96f3d, #a54f2a);
+            border: none;
+            padding: 16px 32px;
+            border-radius: 80px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: white;
+            box-shadow: 0 10px 0 #5d2e18, 0 15px 30px rgba(0, 0, 0, 0.5);
+            transition: 0.08s linear;
+            border: 1px solid rgba(255, 220, 180, 0.5);
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            flex: 1;
+            justify-content: center;
+            min-width: 180px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transform: translateZ(0);
+        }
+
+        .primary-btn:active {
+            transform: translateY(10px) translateZ(0);
+            box-shadow: 0 5px 0 #5d2e18, 0 20px 30px black;
+        }
+
+        .secondary-btn {
+            background: rgba(255, 140, 60, 0.2);
+            border: 1px solid rgba(255, 180, 120, 0.4);
+            padding: 16px 32px;
+            border-radius: 80px;
+            font-weight: 600;
+            font-size: 1.2rem;
+            color: #ffd8b0;
+            box-shadow: 0 8px 0 #3d2a1a, 0 15px 30px black;
+            transition: 0.08s linear;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            flex: 1;
+            justify-content: center;
+            min-width: 180px;
+            text-transform: uppercase;
+            transform: translateZ(0);
+        }
+
+        .secondary-btn:active {
+            transform: translateY(8px) translateZ(0);
+            box-shadow: 0 5px 0 #3d2a1a, 0 20px 30px black;
+        }
+
+        .high-score {
+            background: linear-gradient(145deg, #3d5a3d, #2d472d);
+            padding: 10px 24px;
+            border-radius: 60px;
+            font-weight: 700;
+            color: #cfffae;
+            font-size: 1.1rem;
+            border: 1px solid #aeff7a;
+            display: inline-block;
+            text-shadow: 0 2px 5px black;
+        }
+
+        .help-section {
+            display: flex;
+            justify-content: center;
+            margin: 16px 0 8px 0;
+        }
+
+        .help-btn {
+            background: rgba(70, 40, 20, 0.8);
+            border: 1px solid rgba(255, 160, 100, 0.4);
+            padding: 10px 32px;
+            border-radius: 60px;
+            font-weight: 500;
+            color: #ffdec0;
+            cursor: pointer;
+            font-size: 1rem;
+            box-shadow: 0 4px 10px black;
+            transition: 0.1s;
+        }
+
+        .help-btn:hover {
+            background: rgba(120, 70, 30, 0.9);
+            color: white;
+        }
+
+        /* SEO Content - Justified text */
+        .seo-content {
+            background: rgba(18, 30, 41, 0.8);
+            border-radius: 48px;
+            padding: 40px;
+            margin: 30px 0 20px;
+            border: 1px solid rgba(255, 180, 120, 0.1);
+            color: #f0e6d0;
+        }
+
+        .seo-content h2 {
+            font-size: 2.2rem;
+            color: #ffdbb5;
+            margin-bottom: 20px;
+            text-align: center;
+            text-shadow: 0 0 15px #ff9f4b;
+        }
+
+        .seo-content h3 {
+            font-size: 1.6rem;
+            color: #ffccaa;
+            margin: 30px 0 15px;
+            border-left: 5px solid #ff9f4b;
+            padding-left: 15px;
+        }
+
+        .seo-content p {
+            line-height: 1.7;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            color: #e0d5c0;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        .seo-content ul {
+            margin: 15px 0 25px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .seo-content li {
+            margin: 5px 0;
+            font-size: 1rem;
+            color: #ffdbb5;
+            text-align: left;
+        }
+
+        /* Popular Keywords Tags */
+        .keywords-section {
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .keywords-title {
+            font-size: 1.8rem;
+            color: #ffdbb5;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px #ff9f4b;
+            text-align: center;
+        }
+
+        .keyword-tag {
+            display: inline-block;
+            background: rgba(255, 140, 60, 0.15);
+            border: 1px solid rgba(255, 180, 120, 0.4);
+            border-radius: 40px;
+            padding: 8px 18px;
+            margin: 6px;
+            color: #ffe0b0;
+            font-size: 0.9rem;
+            transition: 0.2s;
+        }
+
+        .keyword-tag:hover {
+            background: rgba(255, 140, 60, 0.3);
+            transform: scale(1.05);
+            border-color: #ffaa55;
+        }
+
+        /* FAQ */
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .faq-item {
+            background: rgba(255, 200, 150, 0.03);
+            border-radius: 30px;
+            padding: 25px;
+            border: 1px solid rgba(255, 160, 100, 0.2);
+        }
+
+        .faq-item h4 {
+            font-size: 1.3rem;
+            color: #ffc491;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .faq-item p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin: 0;
+            color: #d5c9b5;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        /* About page - Justified text */
+        .about-page {
+            background: rgba(18, 30, 41, 0.8);
+            border-radius: 48px;
+            padding: 40px;
+            margin: 20px 0;
+            border: 1px solid rgba(255, 180, 120, 0.1);
+            color: #f0e6d0;
+            display: none;
+        }
+        .about-page.visible {
+            display: block;
+        }
+        .about-page h2 {
+            font-size: 2.5rem;
+            color: #ffdbb5;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .about-page p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        .about-page .close-about {
+            background: rgba(255, 140, 60, 0.3);
+            border: 2px solid #ffaa55;
+            padding: 12px 30px;
+            border-radius: 60px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        /* Footer */
+        .site-footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #b59e80;
+            border-top: 1px solid rgba(255, 180, 120, 0.1);
+            margin-top: 20px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin: 15px 0;
+        }
+
+        .footer-links a {
+            color: #ffcca8;
+            text-decoration: none;
+            transition: color 0.2s;
+            cursor: pointer;
+        }
+
+        .footer-links a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .copyright {
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        /* Modal */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 5, 15, 0.8);
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .modal-card {
+            background: rgba(40, 30, 20, 0.98);
+            max-width: 340px;
+            padding: 36px 32px 40px;
+            border-radius: 80px 80px 60px 60px;
+            text-align: center;
+            box-shadow: 0 30px 50px -10px black, 0 0 0 2px rgba(255, 140, 60, 0.5);
+            border: 1px solid #ffbb88;
+        }
+
+        .modal-card h3 {
+            font-size: 3rem;
+            margin-bottom: 8px;
+        }
+
+        .modal-card p {
+            font-size: 1.4rem;
+            margin: 16px 0 28px;
+            color: #ffdec0;
+            background: rgba(80, 50, 20, 0.8);
+            padding: 20px 16px;
+            border-radius: 60px;
+            font-weight: 500;
+            border: 1px solid #ffaa77;
+        }
+
+        .close-modal {
+            background: linear-gradient(145deg, #c96f3d, #a54f2a);
+            color: white;
+            border: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 12px 48px;
+            border-radius: 60px;
+            box-shadow: 0 8px 0 #5d2e18;
+            cursor: pointer;
+            border: 1px solid #ffccaa;
+            transform: translateZ(0);
+        }
+
+        .close-modal:active {
+            transform: translateY(8px) translateZ(0);
+            box-shadow: 0 2px 0 #5d2e18;
+        }
+
+        .gameover-modal .modal-card {
+            max-width: 380px;
+            background: rgba(60, 25, 15, 0.98);
+        }
+        .gameover-modal .modal-card p {
+            font-size: 2rem;
+            background: #3d2a1c;
+        }
+        .restart-share {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+        .restart-share button {
+            background: #b87c4b;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 40px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+            flex: 1;
+            font-size: 1.1rem;
+            box-shadow: 0 5px 0 #5d3a22;
+            transform: translateZ(0);
+        }
+        .restart-share button:active {
+            transform: translateY(5px) translateZ(0);
+            box-shadow: 0 2px 0 #5d3a22;
+        }
+        #gameoverFinalScore {
+            font-weight: 800;
+            color: #ffd966;
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <span>🔴⚖️🔵</span>
+    </div>
+
+    <div class="site-wrapper" id="siteWrapper">
+        <!-- HEADER -->
+        <header class="seo-header">
+            <h1>Fun Blobs – Free Online Physics Balance Game</h1>
+            <p class="subhead">Play instantly in your browser. No download required. Drag colorful blobs, balance the seesaw, and enjoy smooth physics.</p>
+        </header>
+
+        <!-- GAME -->
+        <div class="game-container">
+            <div class="game-header">
+                <h2>🔴 play now · drag & balance</h2>
+            </div>
+
+            <div class="stats-bar">
+                <span class="score-box" id="scoreDisplay">0</span>
+                <span class="tip" id="stateTip">⚖️ steady</span>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; margin: 0 10px 10px 10px; color: #ffdbb5;">
+                <span id="levelDisplay">🌱 Level 1</span>
+                <span id="comboDisplay">✨ Combo 0x</span>
+            </div>
+
+            <div class="canvas-wrapper">
+                <canvas id="gameCanvas" width="600" height="500"></canvas>
+            </div>
+
+            <div class="action-bar">
+                <button class="secondary-btn" id="shareScoreBtn">📤 SHARE SCORE</button>
+                <button class="primary-btn" id="resetGameBtn">🔄 NEW ROUND</button>
+            </div>
+
+            <div style="display: flex; justify-content: center; margin: 8px 0 16px;">
+                <span class="high-score" id="highScoreDisplay">🏆 BEST: 0</span>
+            </div>
+
+            <div class="help-section">
+                <button class="help-btn" id="howToBtn">ⓘ HOW TO PLAY</button>
+            </div>
+        </div>
+
+        <!-- SEO CONTENT - Now with justified text -->
+        <section class="seo-content">
+            <h2>About Fun Blobs · The Addictive Physics Balance Game</h2>
+            
+            <p>Welcome to <strong>Fun Blobs</strong>, a <strong>free online puzzle game</strong> where physics meets fun. This <strong>interactive physics game</strong> challenges your <strong>timing and balance</strong> as you drag colorful blobs onto a seesaw. It's a <strong>simple physics game</strong> with deep strategy – a perfect <strong>brain training game</strong> for anyone who loves <strong>logic puzzle games</strong> and <strong>skill based games</strong>. The <strong>weight distribution game</strong> mechanics mean every blob affects the <strong>equilibrium puzzle</strong>, making it a true <strong>balance challenge game</strong>.</p>
+
+            <p>As a <strong>casual balance game</strong>, Fun Blobs is designed for quick sessions. It's an <strong>addictive casual game</strong> that gives you that "one more try" feeling. Whether you're looking for a <strong>quick break game</strong> or an <strong>office break online game</strong>, this <strong>lightweight online game</strong> loads instantly. It's a <strong>mobile friendly browser game</strong> that works on any device – no download needed, just pure <strong>HTML5 physics game</strong> fun. The <strong>instant browser game</strong> nature means you can <strong>play without installation</strong> on any modern browser.</p>
+
+            <h3>🎮 Gameplay & Mechanics</h3>
+            <p>This <strong>seesaw game</strong> is all about <strong>balance and strategy</strong>. Drop blobs of different shapes and weights – circles, squares, triangles – onto left or right baskets. It's a <strong>strategy balance game</strong> that tests your <strong>reaction time</strong> and <strong>reflex challenge</strong> skills. The <strong>physics puzzle game online</strong> mechanics are smooth and satisfying. Every blob has weight, making it a true <strong>physics balance game</strong> where every move matters. The <strong>real-time physics simulation game</strong> ensures that <strong>mass and weight balancing</strong> is key to mastering the <strong>stability challenge game</strong>.</p>
+
+            <h3>🌈 Visuals & Design</h3>
+            <p>With its <strong>colorful browser game</strong> aesthetic and <strong>cute monster game</strong> characters, Fun Blobs appeals to all ages. The <strong>cartoon balance game</strong> style is bright and cheerful, making it a <strong>family friendly puzzle game</strong>. It's also a <strong>safe online game for children</strong> with no ads or distractions – perfect for <strong>learning through play</strong> as a <strong>educational physics game</strong> or <strong>shape matching game</strong>. The <strong>minimalist game design</strong> keeps it clean and <strong>relaxing casual game</strong> vibes, while the <strong>smooth animation puzzle</strong> and <strong>satisfying balance effects</strong> create a <strong>visually rewarding game</strong>.</p>
+
+            <p>We focused on <strong>minimalist game design</strong> to keep it clean and <strong>relaxing casual game</strong> vibes. Yet it's a <strong>trending online game</strong> with growing popularity among <strong>popular web games</strong> enthusiasts. It's one of the <strong>best puzzle games</strong> for <strong>time killing</strong> while still being mentally engaging. Players love the <strong>competitive high score game</strong> aspect and the <strong>leaderboard style balance game</strong> that makes it a <strong>replayable arcade puzzle</strong>.</p>
+
+            <h3>🌟 Why You'll Love It</h3>
+            <ul>
+                <li><strong>free online puzzle game</strong> – completely free, no paywalls</li>
+                <li><strong>no download browser game</strong> – plays in any browser</li>
+                <li><strong>instant play online game</strong> – click and start</li>
+                <li><strong>addictive casual game</strong> – easy to learn, hard to master</li>
+                <li><strong>one more try game</strong> – endlessly replayable</li>
+                <li><strong>mobile friendly browser game</strong> – touch optimized</li>
+                <li><strong>lightweight online game</strong> – loads fast on any connection</li>
+                <li><strong>quick break game</strong> – perfect for short sessions</li>
+                <li><strong>office break online game</strong> – work-safe fun</li>
+                <li><strong>fun addictive games</strong> – you'll keep coming back</li>
+                <li><strong>cross platform web game</strong> – play on any device</li>
+                <li><strong>brain exercise puzzle</strong> – sharpen your mind</li>
+            </ul>
+
+            <!-- POPULAR KEYWORDS SECTION -->
+            <div class="keywords-section">
+                <div class="keywords-title">🔥 Popular Keywords</div>
+                <div>
+                    <span class="keyword-tag">balance game</span>
+                    <span class="keyword-tag">physics balance game</span>
+                    <span class="keyword-tag">online balance game</span>
+                    <span class="keyword-tag">seesaw game</span>
+                    <span class="keyword-tag">blob balancing game</span>
+                    <span class="keyword-tag">shape balance game</span>
+                    <span class="keyword-tag">physics puzzle game</span>
+                    <span class="keyword-tag">fun online game</span>
+                    <span class="keyword-tag">free browser game</span>
+                    <span class="keyword-tag">casual balance game</span>
+                    <span class="keyword-tag">physics puzzle game online</span>
+                    <span class="keyword-tag">strategy balance game</span>
+                    <span class="keyword-tag">logic puzzle game</span>
+                    <span class="keyword-tag">brain training game</span>
+                    <span class="keyword-tag">skill based game</span>
+                    <span class="keyword-tag">reaction time game</span>
+                    <span class="keyword-tag">timing and balance game</span>
+                    <span class="keyword-tag">balance and strategy game</span>
+                    <span class="keyword-tag">simple physics game</span>
+                    <span class="keyword-tag">reflex challenge game</span>
+                    <span class="keyword-tag">kids balance game</span>
+                    <span class="keyword-tag">cute monster game</span>
+                    <span class="keyword-tag">educational physics game</span>
+                    <span class="keyword-tag">fun games for kids online</span>
+                    <span class="keyword-tag">shape matching game</span>
+                    <span class="keyword-tag">family friendly puzzle game</span>
+                    <span class="keyword-tag">cartoon balance game</span>
+                    <span class="keyword-tag">colorful browser game</span>
+                    <span class="keyword-tag">learning through play game</span>
+                    <span class="keyword-tag">safe online game for children</span>
+                    <span class="keyword-tag">free online puzzle game</span>
+                    <span class="keyword-tag">no download browser game</span>
+                    <span class="keyword-tag">HTML5 physics game</span>
+                    <span class="keyword-tag">instant play online game</span>
+                    <span class="keyword-tag">addictive casual game</span>
+                    <span class="keyword-tag">one more try game</span>
+                    <span class="keyword-tag">mobile friendly browser game</span>
+                    <span class="keyword-tag">lightweight online game</span>
+                    <span class="keyword-tag">quick break game</span>
+                    <span class="keyword-tag">office break online game</span>
+                    <span class="keyword-tag">free online games</span>
+                    <span class="keyword-tag">best puzzle games</span>
+                    <span class="keyword-tag">fun addictive games</span>
+                    <span class="keyword-tag">simple arcade game</span>
+                    <span class="keyword-tag">trending online game</span>
+                    <span class="keyword-tag">relaxing casual game</span>
+                    <span class="keyword-tag">minimalist game design</span>
+                    <span class="keyword-tag">interactive physics game</span>
+                    <span class="keyword-tag">time killing game</span>
+                    <span class="keyword-tag">popular web games</span>
+                </div>
+            </div>
+
+            <!-- FAQ SECTION -->
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>Is this a free online puzzle game?</h4>
+                    <p>Yes! Fun Blobs is completely free. No payments, no signups – just pure fun as a <strong>free browser game</strong>.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do I need to download anything?</h4>
+                    <p>No download needed. It's an <strong>instant play online game</strong> that runs in your browser as an <strong>HTML5 physics game</strong>.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Is it suitable for kids?</h4>
+                    <p>Absolutely! It's a <strong>safe online game for children</strong> with cute visuals and simple mechanics – a great <strong>educational physics game</strong>.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I play on my phone?</h4>
+                    <p>Yes, it's a <strong>mobile friendly browser game</strong> with touch controls. Works perfectly on all devices.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Is this a good office break game?</h4>
+                    <p>Perfect for quick breaks. It's a <strong>lightweight online game</strong> that loads fast and doesn't distract coworkers.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What makes this game addictive?</h4>
+                    <p>The <strong>timing and balance game</strong> mechanics create that "one more try" feeling. It's a true <strong>addictive casual game</strong>.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Fun Blobs page - Now with justified text -->
+        <div class="about-page" id="aboutPage">
+            <h2>🎮 About Fun Blobs</h2>
+            <p>Fun Blobs was created with a simple mission: to bring the joy of physics-based puzzle gaming to everyone, instantly and free. Founded in 2026, we're a small team of passionate game designers who believe that great gameplay shouldn't require downloads or payments.</p>
+            <p>Our blob characters are designed to be cute, colorful, and friendly – appealing to kids, families, and anyone needing a quick mental break. The seesaw mechanics are carefully tuned to be accessible yet deep, offering a satisfying challenge for casual players and puzzle enthusiasts alike.</p>
+            <p>We're constantly improving Fun Blobs based on player feedback. If you have ideas or just want to say hi, reach out through our community channels. Thanks for playing!</p>
+            <p style="text-align: center;"><span class="close-about" id="closeAboutBtn">⬅ BACK TO GAME</span></p>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="site-footer">
+            <div class="footer-links">
+                <a id="aboutLink">📄 About Fun Blobs</a>
+            </div>
+            <p class="copyright">© 2026 Fun Blobs · The ultimate physics balance game · All rights reserved · funblobs.com</p>
+        </footer>
+    </div>
+
+    <!-- Help modal -->
+    <div class="modal-overlay" id="helpModal">
+        <div class="modal-card">
+            <h3>⚖️</h3>
+            <p>Drag blobs into baskets to collect them.</p>
+            <button class="close-modal" id="closeModalBtn">GOT IT</button>
+        </div>
+    </div>
+
+    <!-- Game Over Modal -->
+    <div class="modal-overlay gameover-modal" id="gameoverModal">
+        <div class="modal-card">
+            <h3>💥 GAME OVER</h3>
+            <p>Score <span id="gameoverFinalScore">0</span></p>
+            <div class="restart-share">
+                <button id="gameoverRestart">🔄 Again</button>
+                <button id="gameoverShare">📤 Share</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function() {
+            // ---------- CONSTANTS & CONFIG ----------
+            const CONFIG = {
+                CW: 600,
+                CH: 500,
+                IMBALANCE_LIMIT: 200,
+                SPAWN_RATE_BASE: 65,
+                WEIGHT: { circle: 1, square: 2, triangle: 3 },
+                BASKET: {
+                    left: { x1: 20, x2: 120, y1: 410, y2: 470 },
+                    right: { x1: 460, x2: 560, y1: 410, y2: 470 }
+                },
+                GROUND_Y: 470,
+                EDGE_PADDING: 12
+            };
+
+            const canvas = document.getElementById('gameCanvas');
+            const ctx = canvas.getContext('2d');
+            const scoreSpan = document.getElementById('scoreDisplay');
+            const stateTip = document.getElementById('stateTip');
+            const highScoreSpan = document.getElementById('highScoreDisplay');
+            const levelSpan = document.getElementById('levelDisplay');
+            const comboSpan = document.getElementById('comboDisplay');
+
+            canvas.width = CONFIG.CW;
+            canvas.height = CONFIG.CH;
+
+            // ---------- MOBILE DETECTION & SIZE MULTIPLIER (1.7x bigger on mobile) ----------
+            const isMobile = window.matchMedia("(max-width: 600px)").matches || window.innerWidth <= 600;
+            const sizeMultiplier = isMobile ? 1.7 : 1.0;
+
+            // ---------- SOUND EFFECTS ----------
+            let audioContext = null;
+            
+            function initAudio() {
+                if (audioContext) return;
+                try {
+                    audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                    document.addEventListener('click', function resumeAudio() {
+                        if (audioContext && audioContext.state === 'suspended') {
+                            audioContext.resume();
+                        }
+                        document.removeEventListener('click', resumeAudio);
+                    }, { once: true });
+                } catch (e) {
+                    console.log('Web Audio API not supported');
+                }
+            }
+
+            function playSound(type) {
+                if (!audioContext) {
+                    initAudio();
+                }
+                
+                try {
+                    if (!audioContext) return;
+                    
+                    const oscillator = audioContext.createOscillator();
+                    const gainNode = audioContext.createGain();
+                    oscillator.connect(gainNode);
+                    gainNode.connect(audioContext.destination);
+                    
+                    if (type === 'drop') {
+                        oscillator.frequency.value = 320;
+                        gainNode.gain.value = 0.1;
+                    } else if (type === 'collect') {
+                        oscillator.frequency.value = 620;
+                        gainNode.gain.value = 0.1;
+                    } else if (type === 'gameover') {
+                        oscillator.frequency.value = 180;
+                        gainNode.gain.value = 0.15;
+                    }
+                    
+                    oscillator.start();
+                    gainNode.gain.exponentialRampToValueAtTime(0.0001, audioContext.currentTime + 0.3);
+                    oscillator.stop(audioContext.currentTime + 0.3);
+                    
+                    if (audioContext.state === 'suspended') {
+                        audioContext.resume();
+                    }
+                } catch (e) { }
+            }
+
+            // ---------- HIGH SCORE ----------
+            let highScore = 0;
+            try {
+                const saved = localStorage.getItem('funblobs_highscore');
+                if (saved) highScore = parseInt(saved) || 0;
+            } catch (e) { }
+            highScoreSpan.innerText = `🏆 BEST: ${highScore}`;
+
+            function updateHighScore(currentTotal) {
+                if (currentTotal > highScore) {
+                    highScore = currentTotal;
+                    highScoreSpan.innerText = `🏆 BEST: ${highScore}`;
+                    try {
+                        localStorage.setItem('funblobs_highscore', highScore);
+                    } catch (e) {}
+                }
+            }
+
+            // ---------- GAME STATE ----------
+            let shapes = [];
+            let leftWeight = 0;
+            let rightWeight = 0;
+            let gameActive = true;
+            let gameOverFlag = false;
+            let imbalanceTimer = 0;
+            let spawnCounter = 0;
+            let spawnRate = CONFIG.SPAWN_RATE_BASE;
+            
+            let level = 1;
+            let combo = 0;
+            let perfectTimer = 0;
+            const PERFECT_FRAMES = 150;
+
+            const WEIGHT = CONFIG.WEIGHT;
+
+            let draggedShape = null;
+            let dragOffsetX = 0, dragOffsetY = 0;
+            let tiltAngle = 0;
+
+            const LEFT_BASKET = CONFIG.BASKET.left;
+            const RIGHT_BASKET = CONFIG.BASKET.right;
+
+            document.addEventListener("visibilitychange", function() {
+                if (document.hidden) {
+                    gameActive = false;
+                } else {
+                    gameActive = true;
+                }
+            });
+
+            function random(min, max) {
+                return Math.random() * (max - min) + min;
+            }
+
+            function createShape() {
+                const typeRand = Math.random();
+                let type;
+                if (typeRand < 0.5) type = 'circle';
+                else if (typeRand < 0.8) type = 'square';
+                else type = 'triangle';
+
+                let w = WEIGHT[type];
+                
+                // Apply mobile size multiplier for better touch targets
+                let size;
+                if (type === 'circle') size = 38 * sizeMultiplier;
+                else if (type === 'square') size = 42 * sizeMultiplier;
+                else size = 46 * sizeMultiplier;
+
+                let color;
+                if (type === 'circle') color = '#FFAA33';
+                else if (type === 'square') color = '#33FFAA';
+                else color = '#FF66CC';
+
+                let x = random(200, 400);
+                let y = random(10, 80);
+
+                return {
+                    type: type,
+                    weight: w,
+                    size: size,
+                    x: x,
+                    y: y,
+                    vx: random(-0.1, 0.1),
+                    vy: random(0.15, 0.3),
+                    grounded: false,
+                    side: null,
+                    color: color,
+                };
+            }
+
+            function resetGame() {
+                shapes = [];
+                leftWeight = 0;
+                rightWeight = 0;
+                gameActive = true;
+                gameOverFlag = false;
+                imbalanceTimer = 0;
+                draggedShape = null;
+                spawnCounter = 20;
+                tiltAngle = 0;
+                level = 1;
+                combo = 0;
+                perfectTimer = 0;
+                spawnRate = CONFIG.SPAWN_RATE_BASE;
+                stateTip.innerText = '⚖️ steady';
+                stateTip.style.background = 'rgba(70, 40, 20, 0.9)';
+                levelSpan.innerText = '🌱 Level 1';
+                comboSpan.innerText = '✨ Combo 0x';
+                document.getElementById('gameoverModal').style.display = 'none';
+            }
+
+            function isInBasket(shape) {
+                const half = shape.size/2;
+                const shapeLeft = shape.x - half;
+                const shapeRight = shape.x + half;
+                const shapeTop = shape.y - half;
+                const shapeBottom = shape.y + half;
+
+                if (shapeRight > LEFT_BASKET.x1 && shapeLeft < LEFT_BASKET.x2 &&
+                    shapeBottom > LEFT_BASKET.y1 && shapeTop < LEFT_BASKET.y2) {
+                    return 'left';
+                }
+
+                if (shapeRight > RIGHT_BASKET.x1 && shapeLeft < RIGHT_BASKET.x2 &&
+                    shapeBottom > RIGHT_BASKET.y1 && shapeTop < RIGHT_BASKET.y2) {
+                    return 'right';
+                }
+                return null;
+            }
+
+            function groundShape(shape) {
+                if (shape.grounded) return;
+                shape.grounded = true;
+                shape.vy = 0;
+                shape.vx = 0;
+                shape.side = shape.x < 300 ? 'left' : 'right';
+                if (shape.side === 'left') {
+                    leftWeight += shape.weight;
+                } else {
+                    rightWeight += shape.weight;
+                }
+                playSound('drop');
+            }
+
+            function updateComboAndLevel() {
+                const total = leftWeight + rightWeight;
+                let newLevel = 1;
+                if (total > 30) newLevel = 3;
+                else if (total > 15) newLevel = 2;
+                if (newLevel !== level) {
+                    level = newLevel;
+                    spawnRate = Math.max(25, CONFIG.SPAWN_RATE_BASE - level * 10);
+                }
+                levelSpan.innerText = level === 1 ? '🌱 Level 1' : level === 2 ? '🔥 Level 2' : '⚡ Level 3';
+
+                const totalWeight = leftWeight + rightWeight;
+                if (totalWeight > 0) {
+                    const imbalance = Math.abs(leftWeight - rightWeight) / totalWeight;
+                    if (imbalance < 0.2) {
+                        perfectTimer++;
+                        if (perfectTimer > PERFECT_FRAMES) {
+                            combo = Math.min(5, combo + 1);
+                            perfectTimer = 0;
+                        }
+                    } else {
+                        perfectTimer = 0;
+                        combo = 0;
+                    }
+                } else {
+                    combo = 0;
+                }
+                comboSpan.innerText = `✨ Combo ${combo}x`;
+            }
+
+            function evaluateBalance() {
+                if (!gameActive) return;
+
+                const totalWeight = leftWeight + rightWeight;
+                if (totalWeight === 0) {
+                    imbalanceTimer = 0;
+                    tiltAngle = 0;
+                    return;
+                }
+
+                const imbalance = Math.abs(leftWeight - rightWeight) / totalWeight;
+                tiltAngle = 0.1 * (leftWeight - rightWeight) / (totalWeight || 1);
+
+                if (imbalance > 0.7) {
+                    imbalanceTimer++;
+                    if (imbalanceTimer > CONFIG.IMBALANCE_LIMIT) {
+                        gameActive = false;
+                        gameOverFlag = true;
+                        stateTip.innerText = '💥 GAME OVER';
+                        stateTip.style.background = '#8b1e1e';
+                        const currentTotal = leftWeight + rightWeight;
+                        updateHighScore(currentTotal);
+                        playSound('gameover');
+                        document.getElementById('gameoverFinalScore').innerText = currentTotal;
+                        document.getElementById('gameoverModal').style.display = 'flex';
+                    } else {
+                        let remaining = Math.ceil((CONFIG.IMBALANCE_LIMIT - imbalanceTimer) / 30);
+                        stateTip.innerText = `⚠️ tipping in ${remaining}s`;
+                        stateTip.style.background = '#8f6f1c';
+                    }
+                } else {
+                    imbalanceTimer = 0;
+                    stateTip.innerText = '⚖️ steady';
+                    stateTip.style.background = 'rgba(70, 40, 20, 0.9)';
+                }
+            }
+
+            function maybeSpawnShape() {
+                if (!gameActive) return;
+                spawnCounter--;
+                if (spawnCounter <= 0) {
+                    shapes.push(createShape());
+                    spawnCounter = spawnRate;
+                }
+            }
+
+            function updatePhysics() {
+                for (let i = shapes.length - 1; i >= 0; i--) {
+                    const s = shapes[i];
+                    
+                    if (draggedShape === s) continue;
+
+                    if (!s.grounded) {
+                        s.vy += 0.04;
+                        s.x += s.vx;
+                        s.y += s.vy;
+
+                        const basket = isInBasket(s);
+                        if (basket) {
+                            if (basket === 'left') {
+                                leftWeight += s.weight;
+                            } else {
+                                rightWeight += s.weight;
+                            }
+                            playSound('collect');
+                            shapes.splice(i, 1);
+                            continue;
+                        }
+
+                        if (s.y + s.size/2 >= CONFIG.GROUND_Y) {
+                            s.y = CONFIG.GROUND_Y - s.size/2;
+                            groundShape(s);
+                        }
+                        
+                        if (s.x - s.size/2 < CONFIG.EDGE_PADDING) {
+                            s.x = CONFIG.EDGE_PADDING + s.size/2;
+                            s.vx *= -0.2;
+                        }
+                        if (s.x + s.size/2 > CONFIG.CW - CONFIG.EDGE_PADDING) {
+                            s.x = CONFIG.CW - CONFIG.EDGE_PADDING - s.size/2;
+                            s.vx *= -0.2;
+                        }
+                    }
+                }
+            }
+
+            function drawScene() {
+                ctx.clearRect(0, 0, CONFIG.CW, CONFIG.CH);
+
+                const grad = ctx.createRadialGradient(300, 200, 50, 300, 300, 600);
+                grad.addColorStop(0, '#2a4a6a');
+                grad.addColorStop(0.6, '#1a2f3f');
+                grad.addColorStop(1, '#0a1a25');
+                ctx.fillStyle = grad;
+                ctx.fillRect(0, 0, CONFIG.CW, CONFIG.CH);
+
+                // Draw baskets
+                ctx.save();
+                ctx.shadowColor = '#ffaa33';
+                ctx.shadowBlur = 8;
+                ctx.strokeStyle = '#ffaa33';
+                ctx.lineWidth = 4;
+                ctx.fillStyle = 'rgba(255, 170, 51, 0.15)';
+                ctx.beginPath();
+                roundRect(ctx, LEFT_BASKET.x1, LEFT_BASKET.y1, LEFT_BASKET.x2 - LEFT_BASKET.x1, LEFT_BASKET.y2 - LEFT_BASKET.y1, 20);
+                ctx.fill();
+                ctx.stroke();
+                ctx.font = 'bold 20px Inter';
+                ctx.fillStyle = '#ffaa33';
+                ctx.fillText('🧺', LEFT_BASKET.x1 + 25, LEFT_BASKET.y1 + 35);
+                ctx.restore();
+
+                ctx.save();
+                ctx.shadowColor = '#33ffaa';
+                ctx.shadowBlur = 8;
+                ctx.strokeStyle = '#33ffaa';
+                ctx.lineWidth = 4;
+                ctx.fillStyle = 'rgba(51, 255, 170, 0.15)';
+                ctx.beginPath();
+                roundRect(ctx, RIGHT_BASKET.x1, RIGHT_BASKET.y1, RIGHT_BASKET.x2 - RIGHT_BASKET.x1, RIGHT_BASKET.y2 - RIGHT_BASKET.y1, 20);
+                ctx.fill();
+                ctx.stroke();
+                ctx.font = 'bold 20px Inter';
+                ctx.fillStyle = '#33ffaa';
+                ctx.fillText('🧺', RIGHT_BASKET.x1 + 25, RIGHT_BASKET.y1 + 35);
+                ctx.restore();
+
+                // Seesaw
+                ctx.save();
+                const pivotX = 300;
+                const pivotY = CONFIG.CH - 55;
+                ctx.translate(pivotX, pivotY);
+                ctx.rotate(tiltAngle);
+                ctx.shadowColor = '#ff9f4b';
+                ctx.shadowBlur = 8;
+                ctx.fillStyle = '#b87c4b';
+                ctx.fillRect(-140, -10, 280, 20);
+                ctx.shadowBlur = 0;
+                ctx.fillStyle = '#dba570';
+                ctx.fillRect(-140, -10, 280, 6);
+                ctx.fillStyle = '#8b5e3c';
+                ctx.fillRect(-140, 4, 280, 6);
+                ctx.shadowColor = '#ffb86b';
+                ctx.shadowBlur = 8;
+                ctx.fillStyle = '#ffcf9a';
+                ctx.beginPath();
+                ctx.arc(-80, -2, 16, 0, 2*Math.PI);
+                ctx.fill();
+                ctx.fillStyle = '#ffb86b';
+                ctx.beginPath();
+                ctx.arc(80, -2, 16, 0, 2*Math.PI);
+                ctx.fill();
+                ctx.restore();
+
+                // Draw shapes
+                for (let s of shapes) {
+                    ctx.save();
+                    ctx.shadowBlur = 8;
+                    ctx.shadowColor = s.color;
+
+                    const shapeGrad = ctx.createRadialGradient(s.x-8, s.y-8, 5, s.x, s.y, s.size);
+                    shapeGrad.addColorStop(0, '#FFFFFF');
+                    shapeGrad.addColorStop(0.4, s.color);
+                    shapeGrad.addColorStop(1, '#FFFFFF');
+                    ctx.fillStyle = shapeGrad;
+
+                    ctx.beginPath();
+                    if (s.type === 'circle') {
+                        ctx.arc(s.x, s.y, s.size/2, 0, 2*Math.PI);
+                        ctx.fill();
+                    } else if (s.type === 'square') {
+                        ctx.fillRect(s.x - s.size/2, s.y - s.size/2, s.size, s.size);
+                    } else if (s.type === 'triangle') {
+                        ctx.moveTo(s.x, s.y - s.size/1.4);
+                        ctx.lineTo(s.x + s.size/1.4, s.y + s.size/2.5);
+                        ctx.lineTo(s.x - s.size/1.4, s.y + s.size/2.5);
+                        ctx.closePath();
+                        ctx.fill();
+                    }
+
+                    ctx.shadowBlur = 0;
+                    ctx.strokeStyle = 'white';
+                    ctx.lineWidth = 3;
+                    ctx.stroke();
+                    ctx.restore();
+                }
+
+                ctx.globalAlpha = 0.1;
+                ctx.strokeStyle = '#ffaa77';
+                ctx.lineWidth = 2;
+                ctx.setLineDash([10, 15]);
+                ctx.beginPath();
+                ctx.moveTo(300, 0);
+                ctx.lineTo(300, CONFIG.CH);
+                ctx.stroke();
+                ctx.setLineDash([]);
+                ctx.globalAlpha = 1;
+            }
+
+            function roundRect(ctx, x, y, w, h, r) {
+                if (w < 2 * r) r = w / 2;
+                if (h < 2 * r) r = h / 2;
+                ctx.beginPath();
+                ctx.moveTo(x + r, y);
+                ctx.lineTo(x + w - r, y);
+                ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+                ctx.lineTo(x + w, y + h - r);
+                ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+                ctx.lineTo(x + r, y + h);
+                ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+                ctx.lineTo(x, y + r);
+                ctx.quadraticCurveTo(x, y, x + r, y);
+                ctx.closePath();
+                return ctx;
+            }
+
+            function getCanvasCoords(e) {
+                const rect = canvas.getBoundingClientRect();
+                const scaleX = canvas.width / rect.width;
+                const scaleY = canvas.height / rect.height;
+                let clientX, clientY;
+
+                if (e.touches) {
+                    clientX = e.touches[0].clientX;
+                    clientY = e.touches[0].clientY;
+                } else {
+                    clientX = e.clientX;
+                    clientY = e.clientY;
+                }
+
+                const canvasX = (clientX - rect.left) * scaleX;
+                const canvasY = (clientY - rect.top) * scaleY;
+                return { x: Math.min(CONFIG.CW, Math.max(0, canvasX)), y: Math.min(CONFIG.CH, Math.max(0, canvasY)) };
+            }
+
+            function handleDragStart(e) {
+                e.preventDefault();
+                if (!gameActive) return;
+                const { x, y } = getCanvasCoords(e);
+                for (let i = shapes.length - 1; i >= 0; i--) {
+                    const s = shapes[i];
+                    const half = s.size/2;
+                    if (x >= s.x - half && x <= s.x + half && y >= s.y - half && y <= s.y + half) {
+                        if (s.grounded && s.side) {
+                            if (s.side === 'left') leftWeight -= s.weight;
+                            else rightWeight -= s.weight;
+                            s.grounded = false;
+                        }
+                        draggedShape = s;
+                        dragOffsetX = s.x - x;
+                        dragOffsetY = s.y - y;
+                        return;
+                    }
+                }
+            }
+
+            function handleDragMove(e) {
+                e.preventDefault();
+                if (!draggedShape || !gameActive) return;
+                const { x, y } = getCanvasCoords(e);
+                draggedShape.x = x + dragOffsetX;
+                draggedShape.y = y + dragOffsetY;
+                draggedShape.x = Math.min(CONFIG.CW - 25, Math.max(25, draggedShape.x));
+                draggedShape.y = Math.min(CONFIG.CH - 40, Math.max(20, draggedShape.y));
+            }
+
+            function handleDragEnd(e) {
+                e.preventDefault();
+                if (draggedShape && gameActive) {
+                    const basket = isInBasket(draggedShape);
+                    if (basket) {
+                        if (basket === 'left') leftWeight += draggedShape.weight;
+                        else rightWeight += draggedShape.weight;
+                        const idx = shapes.indexOf(draggedShape);
+                        if (idx !== -1) shapes.splice(idx, 1);
+                        playSound('collect');
+                    } else {
+                        if (draggedShape.y + draggedShape.size/2 >= CONFIG.GROUND_Y) {
+                            draggedShape.y = CONFIG.GROUND_Y - draggedShape.size/2;
+                            groundShape(draggedShape);
+                        }
+                        draggedShape.vx = 0;
+                        draggedShape.vy = 0;
+                    }
+                }
+                draggedShape = null;
+            }
+
+            canvas.addEventListener('mousedown', handleDragStart);
+            canvas.addEventListener('mousemove', handleDragMove);
+            canvas.addEventListener('mouseup', handleDragEnd);
+            canvas.addEventListener('mouseleave', handleDragEnd);
+            canvas.addEventListener('touchstart', handleDragStart, { passive: false });
+            canvas.addEventListener('touchmove', handleDragMove, { passive: false });
+            canvas.addEventListener('touchend', handleDragEnd);
+            canvas.addEventListener('touchcancel', handleDragEnd);
+
+            // Modal
+            const helpModal = document.getElementById('helpModal');
+            const howBtn = document.getElementById('howToBtn');
+            const closeBtn = document.getElementById('closeModalBtn');
+            howBtn.addEventListener('click', () => helpModal.style.display = 'flex');
+            closeBtn.addEventListener('click', () => helpModal.style.display = 'none');
+            window.addEventListener('click', (e) => {
+                if (e.target === helpModal) helpModal.style.display = 'none';
+            });
+
+            // SHARE SCORE
+            async function shareScore(score) {
+                const shareData = {
+                    title: 'Fun Blobs',
+                    text: `🔴 I collected ${score} blobs in Fun Blobs! Can you beat me? Play free at funblobs.com`,
+                    url: 'https://funblobs.com',
+                };
+                if (navigator.share && window.isSecureContext) {
+                    try {
+                        await navigator.share(shareData);
+                    } catch (err) {
+                        if (err.name !== 'AbortError') {
+                            prompt('Share this message:', shareData.text + ' ' + shareData.url);
+                        }
+                    }
+                } else {
+                    prompt('Share this message:', shareData.text + ' ' + shareData.url);
+                }
+            }
+
+            const shareBtn = document.getElementById('shareScoreBtn');
+            shareBtn.addEventListener('click', () => {
+                const currentScore = leftWeight + rightWeight;
+                shareScore(currentScore);
+            });
+
+            // Game over modal buttons
+            document.getElementById('gameoverRestart').addEventListener('click', () => {
+                document.getElementById('gameoverModal').style.display = 'none';
+                resetGame();
+                for (let i = 0; i < 2; i++) {
+                    let s = createShape();
+                    s.y = random(180, 260);
+                    shapes.push(s);
+                }
+            });
+            document.getElementById('gameoverShare').addEventListener('click', () => {
+                const currentScore = leftWeight + rightWeight;
+                shareScore(currentScore);
+            });
+
+            // Reset
+            document.getElementById('resetGameBtn').addEventListener('click', () => {
+                resetGame();
+                for (let i = 0; i < 2; i++) {
+                    let s = createShape();
+                    s.y = random(180, 260);
+                    shapes.push(s);
+                }
+            });
+
+            // ABOUT PAGE toggle
+            const aboutLink = document.getElementById('aboutLink');
+            const aboutPage = document.getElementById('aboutPage');
+            const closeAbout = document.getElementById('closeAboutBtn');
+            const seoContent = document.querySelector('.seo-content');
+            
+            aboutLink.addEventListener('click', (e) => {
+                e.preventDefault();
+                seoContent.style.display = 'none';
+                aboutPage.classList.add('visible');
+            });
+            closeAbout.addEventListener('click', () => {
+                aboutPage.classList.remove('visible');
+                seoContent.style.display = 'block';
+            });
+
+            // Initialize game with starting shapes
+            resetGame();
+            for (let i = 0; i < 2; i++) {
+                let s = createShape();
+                s.y = random(180, 260);
+                shapes.push(s);
+            }
+            spawnCounter = 25;
+
+            // Game loop
+            let rafId = null;
+            let lastTime = 0;
+            const FPS = 60;
+            const frameInterval = 1000 / FPS;
+
+            function gameLoop(currentTime) {
+                if (!gameActive) {
+                    drawScene();
+                    rafId = requestAnimationFrame(gameLoop);
+                    return;
+                }
+
+                if (currentTime - lastTime >= frameInterval) {
+                    maybeSpawnShape();
+                    updatePhysics();
+                    evaluateBalance();
+                    updateComboAndLevel();
+                    
+                    const currentTotal = leftWeight + rightWeight;
+                    scoreSpan.innerText = currentTotal;
+                    updateHighScore(currentTotal);
+                    
+                    lastTime = currentTime;
+                }
+                
+                drawScene();
+                rafId = requestAnimationFrame(gameLoop);
+            }
+
+            // Hide preloader and start game loop
+            window.addEventListener('load', function() {
+                const preloader = document.getElementById('preloader');
+                preloader.classList.remove('hide');
+                
+                setTimeout(function() {
+                    preloader.classList.add('hide');
+                    
+                    setTimeout(function() {
+                        preloader.style.display = 'none';
+                        initAudio();
+                        lastTime = performance.now();
+                        rafId = requestAnimationFrame(gameLoop);
+                    }, 400);
+                }, 300);
+            });
+
+            window.addEventListener('beforeunload', function() {
+                if (rafId) {
+                    cancelAnimationFrame(rafId);
+                }
+                if (audioContext) {
+                    audioContext.close();
+                }
+            });
+        })();
+    </script>
+</body>
+</html>

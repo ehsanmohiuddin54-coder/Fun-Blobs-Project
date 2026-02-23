@@ -1,0 +1,186 @@
+# robots.txt for Fun Blobs - Physics Balance Game
+# https://www.funblobs.com
+# Last updated: 2026-02-22
+# This is a single-page application (SPA) with all content on one page
+
+# ----------------------
+# USER-AGENT RULES
+# ----------------------
+
+# Allow all major search engines full access
+User-agent: *
+Allow: /
+Allow: /sitemap.xml
+Allow: /*.js
+Allow: /*.css
+Allow: /og-image.jpg
+Disallow: /private/
+Disallow: /temp/
+Disallow: /*.json$
+Disallow: /*.config$
+
+# Google specific (with JavaScript support for SPA)
+User-agent: Googlebot
+Allow: /
+Allow: /sitemap.xml
+Allow: /*.js
+Allow: /*.css
+Allow: /og-image.jpg
+Disallow: /private/
+Disallow: /temp/
+
+# Google Image Bot - for the favicon and OG image
+User-agent: Googlebot-Image
+Allow: /og-image.jpg
+Allow: /favicon.ico
+Allow: /*.svg
+Disallow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Allow: /sitemap.xml
+Allow: /*.js
+Allow: /*.css
+Allow: /og-image.jpg
+Disallow: /private/
+Disallow: /temp/
+
+# Yahoo
+User-agent: Slurp
+Allow: /
+Allow: /sitemap.xml
+Allow: /*.js
+Allow: /*.css
+Allow: /og-image.jpg
+Disallow: /private/
+Disallow: /temp/
+
+# Baidu
+User-agent: Baiduspider
+Allow: /
+Allow: /sitemap.xml
+Allow: /*.js
+Allow: /*.css
+Allow: /og-image.jpg
+Disallow: /private/
+Disallow: /temp/
+
+# Yandex
+User-agent: YandexBot
+Allow: /
+Allow: /sitemap.xml
+Allow: /*.js
+Allow: /*.css
+Allow: /og-image.jpg
+Disallow: /private/
+Disallow: /temp/
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+Allow: /sitemap.xml
+Allow: /*.js
+Allow: /*.css
+Allow: /og-image.jpg
+Disallow: /private/
+Disallow: /temp/
+
+# ----------------------
+# CRAWL DELAY (to prevent server overload)
+# ----------------------
+
+User-agent: *
+Crawl-delay: 1
+
+# ----------------------
+# ARCHIVE BOTS
+# ----------------------
+
+User-agent: archive.org_bot
+Allow: /
+Disallow: /private/
+Disallow: /temp/
+
+User-agent: ia_archiver
+Allow: /
+Disallow: /private/
+Disallow: /temp/
+
+# ----------------------
+# BLOCKED PATHS (system files, backups, etc.)
+# ----------------------
+
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /wp-admin/
+Disallow: /includes/
+Disallow: /database/
+Disallow: /backup/
+Disallow: /logs/
+Disallow: /tmp/
+Disallow: /temp_files/
+Disallow: /cache/
+Disallow: /error_log
+Disallow: /*.bak$
+Disallow: /*.old$
+Disallow: /*.swp$
+Disallow: /*.log$
+Disallow: /*.tmp$
+Disallow: /*.sql$
+Disallow: /*.gz$
+Disallow: /*.zip$
+Disallow: /*.tar$
+Disallow: /*.rar$
+Disallow: /*.7z$
+Disallow: /*.sh$
+Disallow: /*.py$
+Disallow: /*.rb$
+Disallow: /*.pl$
+Disallow: /test/
+Disallow: /dev/
+Disallow: /staging/
+
+# ----------------------
+# ALLOW PATHS FOR SPECIFIC BOTS
+# ----------------------
+
+User-agent: Googlebot-Image
+Allow: /og-image.jpg
+Allow: /favicon.ico
+Allow: /*.svg
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
+Allow: /*.webp
+Disallow: /
+
+User-agent: AdsBot-Google
+Disallow: /
+
+# ----------------------
+# SITEMAP LOCATIONS
+# ----------------------
+
+Sitemap: https://www.funblobs.com/sitemap.xml
+
+# ----------------------
+# HOST DIRECTIVE
+# ----------------------
+
+Host: www.funblobs.com
+
+# ----------------------
+# NOTES FOR SEARCH ENGINES
+# ----------------------
+# This is a single-page application (SPA) with hash navigation
+# All content (game, about, FAQ, how-to-play) is on the main page
+# The page uses schema.org markup for FAQ and VideoGame
+# JavaScript is required to fully render the content
+# Main content sections:
+#   - Game canvas (#game)
+#   - About Fun Blobs (#about)
+#   - FAQ section (#faq)
+#   - How to Play (#how-to-play)
+# Last updated: 2026-02-22

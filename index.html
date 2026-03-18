@@ -36,6 +36,12 @@
     <link rel="manifest" href="/site.webmanifest">
     <link rel="shortcut icon" href="/favicon.ico">
 
+    <!-- PWA: iOS Safari install support -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Fun Blobs">
+    <meta name="mobile-web-app-capable" content="yes">
+
     <!-- Structured Data (minified — no parse overhead) -->
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoGame","name":"Fun Blobs – Relaxing Stress Relief Game","alternateName":["Fun Blobs","Blob Balance Game","Relaxing Blob Game"],"description":"Fun Blobs is a free, calming stress relief game for kids and adults. Drag satisfying colorful blobs onto a seesaw, keep it balanced, and let the peaceful gameplay wash your worries away. Play instantly in any browser with no download required.","genre":["Puzzle","Physics","Relaxation","Stress Relief","Family","Educational","Casual","Anti-Stress","Satisfying","Calming"],"gamePlatform":"Web Browser","applicationCategory":"Game","operatingSystem":"Any","url":"https://www.funblobs.com","image":"https://www.funblobs.com/og-image.jpg","inLanguage":"en","isAccessibleForFree":true,"datePublished":"2025-01-01","dateModified":"2026-03-01","audience":{"@type":"PeopleAudience","suggestedMinAge":4,"suggestedMaxAge":99},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"512","bestRating":"5","worstRating":"1"}}</script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is Fun Blobs free to play?","acceptedAnswer":{"@type":"Answer","text":"Yes, Fun Blobs is 100% free. No payments, no subscriptions, no sign-ups — just open your browser and start playing instantly."}},{"@type":"Question","name":"Do I need to download anything?","acceptedAnswer":{"@type":"Answer","text":"No download needed. Fun Blobs runs entirely in your browser as an HTML5 game on Chrome, Firefox, Safari, and Edge."}},{"@type":"Question","name":"Is Fun Blobs a good stress relief game?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. The satisfying physics, peaceful visuals, gentle sounds, and no-pressure design make it one of the best free anti-stress games online."}},{"@type":"Question","name":"Is it safe for young children?","acceptedAnswer":{"@type":"Answer","text":"Yes. No ads, no in-app purchases, no chat, no external links. A completely safe, calm, colorful game for all ages."}},{"@type":"Question","name":"Does it work on phones and tablets?","acceptedAnswer":{"@type":"Answer","text":"Yes. Fully optimised for touchscreens — just tap and drag on iOS or Android."}},{"@type":"Question","name":"How does scoring work?","acceptedAnswer":{"@type":"Answer","text":"Circles add 1 point, squares add 2, triangles add 3. Your best score is saved automatically in your browser."}},{"@type":"Question","name":"Does Fun Blobs have ads?","acceptedAnswer":{"@type":"Answer","text":"No. Completely ad-free with no pop-ups, no banners, and no video ads."}},{"@type":"Question","name":"Why is this considered calming or ASMR-like?","acceptedAnswer":{"@type":"Answer","text":"Soft blob physics, gentle landing sounds, a peaceful color palette, and repetitive balance mechanics create a meditative flow state similar to ASMR."}},{"@type":"Question","name":"Can Fun Blobs help with anxiety?","acceptedAnswer":{"@type":"Answer","text":"Many players use it as a light mental reset. The simple focused gameplay encourages mindfulness and can help reduce anxious feelings."}},{"@type":"Question","name":"What are the different levels?","acceptedAnswer":{"@type":"Answer","text":"Level 1 (0–14 weight) is meditative. Level 2 (15–29) picks up slightly. Level 3 (30+) flows at a satisfying pace. Progression is never punishing."}},{"@type":"Question","name":"What causes the game to end?","acceptedAnswer":{"@type":"Answer","text":"If one side stays much heavier for too long, the game ends. A countdown warning gives you time to restore balance."}},{"@type":"Question","name":"Does Fun Blobs work offline?","acceptedAnswer":{"@type":"Answer","text":"An internet connection loads the page. Once loaded, the game runs entirely on your device."}}]}</script>
@@ -271,6 +277,121 @@
             .how-to-steps { grid-template-columns: 1fr 1fr; }
             .faq-grid { grid-template-columns: 1fr; }
             .benefit-grid { grid-template-columns: 1fr 1fr; }
+        }
+
+        /* ── PWA Install Banner ── */
+        #pwa-banner {
+            display: none; /* shown via JS once beforeinstallprompt fires */
+            position: fixed;
+            bottom: 24px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 8000;
+            width: calc(100% - 32px);
+            max-width: 480px;
+            background: linear-gradient(145deg, rgba(26,47,63,0.98), rgba(11,26,38,0.98));
+            border: 1px solid rgba(255,170,80,0.5);
+            border-radius: 28px;
+            padding: 18px 20px;
+            box-shadow: 0 16px 40px rgba(0,0,0,0.7), 0 0 0 1px rgba(255,160,80,0.2);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            animation: bannerSlideUp 0.35s cubic-bezier(0.34,1.56,0.64,1) forwards;
+        }
+        @keyframes bannerSlideUp {
+            from { opacity: 0; transform: translateX(-50%) translateY(30px); }
+            to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+        }
+        #pwa-banner.hide {
+            animation: bannerSlideDown 0.25s ease forwards;
+        }
+        @keyframes bannerSlideDown {
+            to { opacity: 0; transform: translateX(-50%) translateY(40px); }
+        }
+        .pwa-banner-inner {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .pwa-banner-icon {
+            font-size: 2.4rem;
+            flex-shrink: 0;
+            filter: drop-shadow(0 0 8px rgba(255,160,80,0.6));
+        }
+        .pwa-banner-text { flex: 1; }
+        .pwa-banner-text strong {
+            display: block;
+            color: #ffeacc;
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 2px;
+        }
+        .pwa-banner-text span {
+            color: #c8b89a;
+            font-size: 0.82rem;
+            line-height: 1.4;
+        }
+        .pwa-banner-actions {
+            display: flex;
+            gap: 8px;
+            margin-top: 14px;
+        }
+        .pwa-install-btn {
+            flex: 1;
+            background: linear-gradient(145deg, #c96f3d, #a54f2a);
+            border: 1px solid rgba(255,200,140,0.5);
+            color: #fff;
+            font-weight: 700;
+            font-size: 0.95rem;
+            padding: 10px 0;
+            border-radius: 60px;
+            cursor: pointer;
+            box-shadow: 0 5px 0 #5d2e18;
+            transition: transform .08s, box-shadow .08s;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .pwa-install-btn:active { transform: translateY(5px); box-shadow: 0 1px 0 #5d2e18; }
+        .pwa-dismiss-btn {
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.15);
+            color: #a09080;
+            font-size: 0.85rem;
+            padding: 10px 18px;
+            border-radius: 60px;
+            cursor: pointer;
+            transition: background .15s;
+        }
+        .pwa-dismiss-btn:hover { background: rgba(255,255,255,0.1); color: #ddd; }
+
+        /* iOS-specific hint (Safari doesn't fire beforeinstallprompt) */
+        #pwa-ios-hint {
+            display: none;
+            position: fixed;
+            bottom: 24px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 8000;
+            width: calc(100% - 32px);
+            max-width: 380px;
+            background: linear-gradient(145deg, rgba(26,47,63,0.98), rgba(11,26,38,0.98));
+            border: 1px solid rgba(255,170,80,0.4);
+            border-radius: 24px;
+            padding: 16px 18px;
+            box-shadow: 0 14px 36px rgba(0,0,0,0.7);
+            text-align: center;
+            font-size: 0.88rem;
+            color: #d5c9b5;
+            line-height: 1.6;
+            animation: bannerSlideUp 0.35s cubic-bezier(0.34,1.56,0.64,1) forwards;
+        }
+        #pwa-ios-hint strong { color: #ffeacc; display: block; margin-bottom: 6px; font-size: 0.95rem; }
+        #pwa-ios-hint .ios-close {
+            display: inline-block; margin-top: 12px;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            color: #a09080; font-size: 0.82rem;
+            padding: 6px 20px; border-radius: 40px; cursor: pointer;
         }
     </style>
 </head>
@@ -555,6 +676,30 @@
                 <button id="gameoverShare" aria-label="Share your score">📤 Share</button>
             </div>
         </div>
+    </div>
+
+    <!-- PWA Install Banner (Android / Desktop Chrome/Edge) -->
+    <div id="pwa-banner" role="dialog" aria-label="Install Fun Blobs app">
+        <div class="pwa-banner-inner">
+            <span class="pwa-banner-icon" aria-hidden="true">🔴</span>
+            <div class="pwa-banner-text">
+                <strong>Install Fun Blobs — Play Anytime!</strong>
+                <span>Add to your home screen for instant offline access. Free, no App Store needed.</span>
+            </div>
+        </div>
+        <div class="pwa-banner-actions">
+            <button class="pwa-install-btn" id="pwaInstallBtn">📲 Install Free</button>
+            <button class="pwa-dismiss-btn" id="pwaDismissBtn">Not now</button>
+        </div>
+    </div>
+
+    <!-- iOS Safari hint (Safari doesn't support beforeinstallprompt) -->
+    <div id="pwa-ios-hint" role="dialog" aria-label="Install instructions for iOS">
+        <strong>📲 Install Fun Blobs on iPhone / iPad</strong>
+        Tap the <strong>Share</strong> button&nbsp;⬆️ in Safari, then tap
+        <strong>"Add to Home Screen"</strong> to install for free!
+        <br>
+        <span class="ios-close" id="iosHintClose">Got it ✓</span>
     </div>
 
     <script>
@@ -1000,6 +1145,77 @@
             stopLoop();
             if (audioCtx) audioCtx.close();
         });
+
+        // ── PWA: Service Worker Registration ────────────────────────────────
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .catch(err => console.warn('SW registration failed:', err));
+            });
+        }
+
+        // ── PWA: Install Prompt (Chrome / Edge / Android) ────────────────────
+        // beforeinstallprompt fires when the browser decides the app is installable
+        let deferredInstallPrompt = null;
+        const pwaBanner    = document.getElementById('pwa-banner');
+        const pwaInstallBtn = document.getElementById('pwaInstallBtn');
+        const pwaDismissBtn = document.getElementById('pwaDismissBtn');
+
+        // Don't show if user already dismissed this session
+        const pwaDismissed = sessionStorage.getItem('pwa-dismissed');
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault(); // stop browser mini-bar
+            deferredInstallPrompt = e;
+            // Show our custom banner after 8 seconds of play (user is engaged)
+            if (!pwaDismissed) {
+                setTimeout(() => {
+                    if (deferredInstallPrompt) pwaBanner.style.display = 'block';
+                }, 8000);
+            }
+        });
+
+        pwaInstallBtn && pwaInstallBtn.addEventListener('click', async () => {
+            if (!deferredInstallPrompt) return;
+            deferredInstallPrompt.prompt();
+            const { outcome } = await deferredInstallPrompt.userChoice;
+            deferredInstallPrompt = null;
+            hidePwaBanner();
+        });
+
+        pwaDismissBtn && pwaDismissBtn.addEventListener('click', () => {
+            sessionStorage.setItem('pwa-dismissed', '1');
+            hidePwaBanner();
+        });
+
+        function hidePwaBanner() {
+            pwaBanner.classList.add('hide');
+            setTimeout(() => { pwaBanner.style.display = 'none'; pwaBanner.classList.remove('hide'); }, 260);
+        }
+
+        // Hide banner once installed
+        window.addEventListener('appinstalled', () => {
+            hidePwaBanner();
+            deferredInstallPrompt = null;
+        });
+
+        // ── PWA: iOS Safari Hint ─────────────────────────────────────────────
+        // iOS Safari doesn't fire beforeinstallprompt — show a manual hint instead
+        const isIos = /iphone|ipad|ipod/i.test(navigator.userAgent);
+        const isInStandaloneMode = window.matchMedia('(display-mode: standalone)').matches
+                                || window.navigator.standalone === true;
+        const iosHintDismissed = localStorage.getItem('pwa-ios-dismissed');
+
+        if (isIos && !isInStandaloneMode && !iosHintDismissed) {
+            const iosHint = document.getElementById('pwa-ios-hint');
+            // Show after 12 seconds so it doesn't interrupt the first impression
+            setTimeout(() => { if (iosHint) iosHint.style.display = 'block'; }, 12000);
+            const iosClose = document.getElementById('iosHintClose');
+            iosClose && iosClose.addEventListener('click', () => {
+                iosHint.style.display = 'none';
+                localStorage.setItem('pwa-ios-dismissed', '1');
+            });
+        }
 
     })();
     </script>

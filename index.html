@@ -298,7 +298,7 @@
         </header>
 
         <main>
-            <section class="game-container" aria-label="Fun Blobs relaxing stress relief game">
+            <section id="game" class="game-container" aria-label="Fun Blobs relaxing stress relief game">
                 <div class="game-header">
                     <h2>🔴 play now · drag &amp; balance</h2>
                 </div>
@@ -374,7 +374,7 @@
                     </div>
                 </div>
 
-                <h3>🎮 How to Play</h3>
+                <h3 id="how-to-play">🎮 How to Play</h3>
 
                 <div class="how-to-steps" role="list">
                     <div class="step-card" role="listitem">
@@ -438,19 +438,19 @@
                     <li><strong>Build your combo.</strong> Staying balanced for 5 consecutive seconds builds your combo multiplier — a reward for inner calm.</li>
                 </ul>
 
-                <h3>💡 Levels, Combos &amp; Progression</h3>
+                <h3 id="addictive-game">💡 Levels, Combos &amp; Progression</h3>
                 <p><strong>Level 1</strong> (0–14 weight) is slow and meditative. <strong>Level 2</strong> (15–29) introduces a slightly busier blob stream. <strong>Level 3</strong> (30+) flows at a satisfying, rewarding pace. Progression is gradual and never punishing.</p>
 
-                <h3>🧘 Who Is Fun Blobs For?</h3>
+                <h3 id="office-break-game">🧘 Who Is Fun Blobs For?</h3>
                 <p>If you search for <em>relaxing games after work</em>, <em>games to clear your mind</em>, <em>calming games for anxiety</em>, or <em>satisfying mobile games</em>, Fun Blobs was made for you. It's equally perfect as a <strong>kids' calming game</strong> and as a <strong>daily stress relief tool</strong> for busy adults.</p>
 
-                <h3>❓ Frequently Asked Questions</h3>
+                <h3 id="faq">❓ Frequently Asked Questions</h3>
                 <div class="faq-grid">
-                    <article class="faq-item">
+                    <article id="is-it-free" class="faq-item">
                         <h4>Is Fun Blobs free to play?</h4>
                         <p>Yes, 100% free. No payments, no subscriptions, no sign-ups, no hidden costs. Open the page and start relaxing instantly.</p>
                     </article>
-                    <article class="faq-item">
+                    <article id="no-download" class="faq-item">
                         <h4>Do I need to download anything?</h4>
                         <p>Not at all. Fun Blobs runs entirely in your web browser as an HTML5 game. Works on Chrome, Firefox, Safari, and Edge.</p>
                     </article>
@@ -458,11 +458,11 @@
                         <h4>Is Fun Blobs a good stress relief game?</h4>
                         <p>Yes. Gentle physics, satisfying drag-and-drop, calming visuals, and no-pressure design make it one of the best free anti-stress games online.</p>
                     </article>
-                    <article class="faq-item">
+                    <article id="kid-friendly" class="faq-item">
                         <h4>Is it safe for young children?</h4>
                         <p>Absolutely. No ads, no in-app purchases, no chat, no external links. A completely safe, calm, colorful game for all ages.</p>
                     </article>
-                    <article class="faq-item">
+                    <article id="mobile-friendly" class="faq-item">
                         <h4>Does it work on phones and tablets?</h4>
                         <p>Yes. Fully optimised for touchscreens. Tap and drag blobs with your finger on iOS or Android, just like a mouse on desktop.</p>
                     </article>
@@ -517,7 +517,7 @@
             </section>
         </main>
 
-        <aside class="about-page" id="aboutPage" aria-label="About Fun Blobs">
+        <aside id="about" class="about-page" aria-label="About Fun Blobs">
             <h2>🎮 About Fun Blobs</h2>
             <p>Fun Blobs was created with a single mission: to bring calm, joyful gaming to everyone — especially kids and stressed adults — without any barriers. No downloads, no payments, no distractions. Just a genuinely relaxing, <strong>stress relief game</strong> you can play anywhere, any time.</p>
             <p>We're a small team of game designers who believe the best games make you smile and breathe easier. The seesaw mechanic was carefully tuned to feel satisfying rather than punishing — challenging enough to keep you focused, but gentle enough to enjoy on a lunch break or quiet evening.</p>
@@ -946,7 +946,7 @@
         document.getElementById('resetGameBtn').addEventListener('click',    () => { resetGame(); spawnInitial(); });
 
         // ── ABOUT TOGGLE ─────────────────────────────────────────────────────
-        const aboutPage  = document.getElementById('aboutPage');
+        const aboutPage  = document.getElementById('about');
         const seoContent = document.querySelector('.seo-content');
         function showAbout() { seoContent.style.display = 'none'; aboutPage.classList.add('visible'); }
         function hideAbout() { aboutPage.classList.remove('visible'); seoContent.style.display = 'block'; }

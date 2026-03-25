@@ -7,23 +7,15 @@
     <!-- MAIN GAME PAGE -->
     <url>
         <loc>https://www.funblobs.com/</loc>
-        <lastmod>2026-03-18</lastmod>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
-    </url>
-
-    <!-- ABOUT SECTION -->
-    <url>
-        <loc>https://www.funblobs.com/#about</loc>
-        <lastmod>2026-03-18</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
     </url>
 
     <!-- GAME CANVAS SECTION -->
     <url>
         <loc>https://www.funblobs.com/#game</loc>
-        <lastmod>2026-03-18</lastmod>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
@@ -31,7 +23,7 @@
     <!-- HOW TO PLAY SECTION -->
     <url>
         <loc>https://www.funblobs.com/#how-to-play</loc>
-        <lastmod>2026-03-18</lastmod>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -39,15 +31,71 @@
     <!-- FAQ SECTION -->
     <url>
         <loc>https://www.funblobs.com/#faq</loc>
-        <lastmod>2026-03-18</lastmod>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
+    </url>
+
+    <!-- STRESS RELIEF — 7 REASONS (new) -->
+    <url>
+        <loc>https://www.funblobs.com/#stress-relief-reasons</loc>
+        <lastmod>2026-03-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- ODDLY SATISFYING PHYSICS (new) -->
+    <url>
+        <loc>https://www.funblobs.com/#oddly-satisfying</loc>
+        <lastmod>2026-03-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- LOW EFFORT GAME / SITUATIONAL USE CASES (new) -->
+    <url>
+        <loc>https://www.funblobs.com/#low-effort-game</loc>
+        <lastmod>2026-03-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- 5 WAYS RELAXATION GUIDE (new) -->
+    <url>
+        <loc>https://www.funblobs.com/#relaxation-guide</loc>
+        <lastmod>2026-03-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- ABOUT SECTION -->
+    <url>
+        <loc>https://www.funblobs.com/#about</loc>
+        <lastmod>2026-03-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- WHO IS IT FOR / OFFICE BREAK -->
+    <url>
+        <loc>https://www.funblobs.com/#office-break-game</loc>
+        <lastmod>2026-03-25</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.4</priority>
+    </url>
+
+    <!-- LEVELS & PROGRESSION -->
+    <url>
+        <loc>https://www.funblobs.com/#addictive-game</loc>
+        <lastmod>2026-03-25</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.4</priority>
     </url>
 
     <!-- FAQ: Is it free -->
     <url>
         <loc>https://www.funblobs.com/#is-it-free</loc>
-        <lastmod>2026-03-18</lastmod>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.4</priority>
     </url>
@@ -55,7 +103,7 @@
     <!-- FAQ: No download needed -->
     <url>
         <loc>https://www.funblobs.com/#no-download</loc>
-        <lastmod>2026-03-18</lastmod>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.4</priority>
     </url>
@@ -63,7 +111,7 @@
     <!-- FAQ: Kid friendly -->
     <url>
         <loc>https://www.funblobs.com/#kid-friendly</loc>
-        <lastmod>2026-03-18</lastmod>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.4</priority>
     </url>
@@ -71,23 +119,7 @@
     <!-- FAQ: Mobile friendly -->
     <url>
         <loc>https://www.funblobs.com/#mobile-friendly</loc>
-        <lastmod>2026-03-18</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.4</priority>
-    </url>
-
-    <!-- Who is it for / office break section -->
-    <url>
-        <loc>https://www.funblobs.com/#office-break-game</loc>
-        <lastmod>2026-03-18</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.4</priority>
-    </url>
-
-    <!-- Levels & progression / addictive gameplay section -->
-    <url>
-        <loc>https://www.funblobs.com/#addictive-game</loc>
-        <lastmod>2026-03-18</lastmod>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.4</priority>
     </url>

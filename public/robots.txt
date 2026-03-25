@@ -1,6 +1,6 @@
 # robots.txt for Fun Blobs - Relaxing Stress Relief Physics Game
 # https://www.funblobs.com
-# Last updated: 2026-03-18
+# Last updated: 2026-03-25
 # This is a single-page application (SPA) with all content on one page
 
 # ----------------------
@@ -172,14 +172,18 @@ Host: www.funblobs.com
 # The page uses schema.org markup for FAQ and VideoGame
 # JavaScript is required to fully render the content
 # Main content sections:
-#   - Game canvas             (#game)
-#   - About Fun Blobs         (#about)
-#   - FAQ section             (#faq)
-#   - How to Play             (#how-to-play)
-#   - Is it free?             (#is-it-free)
-#   - No download needed      (#no-download)
-#   - Kid friendly            (#kid-friendly)
-#   - Mobile friendly         (#mobile-friendly)
-#   - Office / break game     (#office-break-game)
-#   - Levels & addictive play (#addictive-game)
-# Last updated: 2026-03-18
+#   - Game canvas                    (#game)
+#   - About Fun Blobs                (#about)
+#   - FAQ section                    (#faq)
+#   - How to Play                    (#how-to-play)
+#   - Stress Relief — 7 Reasons      (#stress-relief-reasons)
+#   - Oddly Satisfying Physics       (#oddly-satisfying)
+#   - Low Effort / Situational Use   (#low-effort-game)
+#   - 5 Ways Relaxation Guide        (#relaxation-guide)
+#   - Is it free?                    (#is-it-free)
+#   - No download needed             (#no-download)
+#   - Kid friendly                   (#kid-friendly)
+#   - Mobile friendly                (#mobile-friendly)
+#   - Office / break game            (#office-break-game)
+#   - Levels & addictive play        (#addictive-game)
+# Last updated: 2026-03-25
